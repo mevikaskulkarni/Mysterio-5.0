@@ -1,0 +1,407 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    background: url('jnn.png') no-repeat center center;
+    background-size: contain; /* Ensures the entire image is visible */
+    background-position: top; /* Adjusts the positioning to avoid cutting the top */
+    background-attachment: fixed;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Moves it 2cm down */
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain; /* Ensures full image visibility */
+        background-attachment: scroll;
+        height: auto;
+        min-height: 50vh;
+    }
+}
+
+
+
+.hero-content {
+    background: rgba(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    margin-top: 9cm;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #003366;
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* General Styles for Info Boxes */
+#about-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.info-box {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 30%;
+    min-height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect with background glow */
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 80, 158, 0.4);
+    background: linear-gradient(135deg, #dfe7fd, #b3c7ff);
+}
+
+/* Styling for headings */
+.info-box h2 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Text styling */
+.info-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Initially hide the full details */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Design for Info Boxes */
+@media (max-width: 768px) {
+    .info-box {
+        padding: 20px;
+    }
+
+    .info-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .info-box p {
+        font-size: 1rem;
+    }
+}
+
+#about h2, #about-college h2, #about-department h2 {
+    font-size: 2.2rem;
+    color: #003366;
+}
+
+#about p, #about-college p, #about-department p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Leadership Section */
+#leadership {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.leadership-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Leader Card */
+.leader-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Glow Effect */
+.leader-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 80, 158, 0.5);
+    background: linear-gradient(135deg, #dfe7fd, #b3c7ff);
+}
+
+/* Leader Image */
+.leader-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Image Zoom */
+.leader-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Leader Name */
+.leader-card h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin: 10px 0 5px;
+}
+
+/* Leader Position */
+.leader-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .leadership-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.event-card {
+    background: linear-gradient(45deg, #00509e, #003366);
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 80, 158, 0.3);
+}
+
+
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+footer p{
+    color: white
+}
+
+.socials{
+    color: white
+}
+
+
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.modalmain {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content_main {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-info {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    .hero-content { width: 95%; }
+    .events-grid { grid-template-columns: repeat(2, 1fr); }
+    .leadership-grid { grid-template-columns: repeat(2, 1fr); }
+    .modal-content { width: 90%; }
+}
+
+/* Explore Button */
+.explore-btn {
+    background: #003366;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.explore-btn:hover {
+    background: #00509e;
+    transform: scale(1.05);
+}
+
+/* Modal Buttons */
+.modal button {
+    background: #003366;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal button:hover {
+    background: #00509e;
+    transform: scale(1.05);
+}
+
+.modal button:active {
+    background: #004080;
+    transform: scale(1);
+}
+
+
+/* Contact Button Styling (for the showContacts) */
+#contactList button {
+    background: #00509e;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+#contactList button:hover {
+    background: #003366;
+    transform: scale(1.05);
+}
