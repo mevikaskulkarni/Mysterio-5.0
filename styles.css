@@ -259,6 +259,13 @@ footer {
     margin-top: 40px;
 }
 
+@media (max-width: 480px) {
+    .event-card {
+        font-size: 14px; /* Slightly smaller text */
+        padding: 12px 15px;
+        max-width: 90%; /* Adjust width for small screens */
+    }
+
 footer p{
     color: white
 }
