@@ -55,7 +55,7 @@ function showContacts() {
             { name: "Dhanushree K R", phone: "+91 8951232228" }
         ],
         "Hobby Project": [
-            { name: "Aadhya K R", phone: "+91 6364817378" },
+            { name: "Adhya K R", phone: "+91 6364817378" },
             { name: "C G Poorvi", phone: "+91 8277648698" },
             { name: "Samhita S Shedgar", phone: "+91 9353367278" }
         ],
