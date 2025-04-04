@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterio 5.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="mysterio.png" alt="Mysterio 5.0 Logo" class="logo">
+            <h1>MYSTERIO 5.0</h1>
+            <p>A State-Level Technical Symposium</p>
+            <button class="explore-btn" onclick="smoothScrollTo('events')">Explore Events</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about-section">
+            <div class="info-box" onclick="toggleDetails('mysterio')">
+                <h2>About Mysterio 5.0</h2>
+                <p id="mysterio-short">Mysterio 5.0 is a premier technical symposium organized by the Department of Electronics and Communication, JNNCE, Shivamogga. Click to know more.</p>
+                <div id="mysterio-full" class="hidden">
+                    <p>Mysterio 5.0 brings together innovators, tech enthusiasts, and problem solvers to participate in challenging and creative events.</p>
+                </div>
+            </div>
+        
+            <div class="info-box" onclick="toggleDetails('college')">
+                <h2>About the College</h2>
+                <p id="college-short">JNNCE was established in 1980. Click to know more.</p>
+                <div id="college-full" class="hidden">
+                    <p>JNNCE is affiliated with VTU, Belagavi, and recognized by AICTE. The campus is spread across 39.4 acres with state-of-the-art infrastructure and experienced faculty.</p>
+                </div>
+            </div>
+        
+            <div class="info-box" onclick="toggleDetails('department')">
+                <h2>About the Department</h2>
+                <p id="department-short"><h3>Department Vision</h3>
+                    <p>To be a premier center for education and research in ECE, producing industry-ready engineers. Click to know more.</p>
+                <div id="department-full" class="hidden">
+                    <p>The ECE Department has been a leader in technical education.</p>
+                </div>
+            </div>
+            
+            <div class="info-box" onclick="toggleDetails('mission')">
+                <h2>Department Mission</h2>
+                <p id="mission-short"><h3>Department Mission</h3>
+                    <p>Create centers of excellence in the field of Electronics & Communication Engineering in collaboration with the industries and academic organizations. Click to know more.</p>
+                <div id="mission-full" class="hidden">
+                    <p>Impart quality education through innovative and continuous teaching - learning process. Groom the students with required foundations of Electronics & Communication Engineering and inculcate in them the professional ethics & human values.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Leadership Section -->
+<section id="leadership">
+    <h2>Leadership Team</h2>
+    <div class="leadership-grid">
+        <a class="leader-card">
+            <img src="vijay_kumar.jpg" alt="Dr. Y Vijaya Kumar">
+            <h3>Dr. Y Vijaya Kumar</h3>
+            <p>Principal</p>
+        </a>
+        <a class="leader-card">
+            <img src="manjunatha.jpg" alt="Dr. P Manjunatha">
+            <h3>Dr. P Manjunatha</h3>
+            <p>Professor | Dean Academics</p>
+        </a>
+        <a href="https://www.linkedin.com/in/sathyanarayana-s-v-359a4b200/" class="leader-card">
+            <img src="sathyanarayana.jpeg" alt="Dr. S V Sathyanarayana">
+            <h3>Dr. S V Sathyanarayana</h3>
+            <p>Professor | HoD Dept. Of ECE | Dean R&D</p>
+        </a>
+    </div>
+</section>
+
+<!-- Organising Committee Section -->
+<section id="leadership">
+    <h2>Organising Committee</h2>
+    <div class="leadership-grid">
+        <a href="https://www.linkedin.com/in/dr-prema-k-n-a03a054b/" class="leader-card">
+            <img src="prema.jpg" alt="Dr. Prema K N">
+            <h3>Dr. Prema K N</h3>
+            <p>Assistant Professor</p>
+            <p>Dept. Of ECE</p>
+        </a>
+        <a href="https://www.linkedin.com/in/smitha-s-m-1a70561a2/" class="leader-card">
+            <img src="smitha.jpg" alt="Mrs. Smitha S M">
+            <h3>Mrs. Smitha S M</h3>
+            <p>Assistant Professor</p>
+            <p>Dept. Of ECE</p>
+        </a>
+        <a class="leader-card">
+            <img src="roopa.jpg" alt="Mrs. Roopa B S">
+            <h3>Mrs. Roopa B S</h3>
+            <p>Assistant Professor</p>
+            <p>Dept. Of ECE</p>
+        </a>
+    </div>
+</section>
+
+<!-- Student Coordinators Section -->
+<section id="leadership">
+    <h2>Student Coordinators</h2>
+    <div class="leadership-grid">
+        <a href="https://www.linkedin.com/in/yuvaraj-k-e-a227382b3/" class="leader-card">
+            <img src="yuvaraj.jpg" alt="Yuvaraj K E">
+            <h3>Yuvaraj K E</h3>
+            <p>Dept. Of ECE</p>
+        </a>
+        <a href="https://www.linkedin.com/in/varsha-vasanth-akkasali-254985339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="leader-card">
+            <img src="varsha.jpeg" alt="Varsha Vasanth">
+            <h3>Varsha Vasanth</h3>
+            <p>Dept. Of ECE</p>
+        </a>
+        <a href="https://www.linkedin.com/in/chiranth-1534a5317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="leader-card">
+            <img src="chiranth.jpeg" alt="D G Chiranth">
+            <h3>D G Chiranth</h3>
+            <p>Dept. Of ECE</p>
+        </a>
+        <a href="https://www.linkedin.com/in/dhanu-shree-kr-984529339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="leader-card">
+            <img src="dhanushree.jpeg" alt="Dhanushree K R">
+            <h3>Dhanushree K R</h3>
+            <p>Dept. Of ECE</p>
+        </a>
+    </div>
+</section>
+
+        <section id="events">
+            <h1>MYSTERIO 5.0</h1>
+            <div class="events-grid">
+                <div class="event-card" onclick="openModal('Mysterio 5.0')">Click here to Register for Mysterio</div>
+            </div>
+        </section>
+        
+        <!-- Events Section -->
+        <section id="events">
+            <h2>Our Events</h2>
+            <h3>Click on the button displaying the event name to learn more and register.</h3>
+            <div class="events-grid">
+                <div class="event-card" onclick="openModal('Hobby Project')">Hobby Project</div>
+                <div class="event-card" onclick="openModal('Hiring Challenge')">Hiring Challenge</div>
+                <div class="event-card" onclick="openModal('Programiz')">Programiz</div>
+                <div class="event-card" onclick="openModal('Uno Arduino')">Uno Arduino</div>
+                <div class="event-card" onclick="openModal('Engineering a Way Out')">Engineering a Way Out</div>
+                <div class="event-card" onclick="openModal('Dr. Circuit')">Dr. Circuit</div>
+                <div class="event-card" onclick="openModal('Paper Presentation')">Paper Presentation</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Event Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="eventTitle">Event Title</h2>
+            <p id="eventDescription">Event details will appear here.</p>
+            <button id="scheduleBtn" class="hidden" onclick="downloadFile('schedule')">Download Schedule</button>
+            <button onclick="downloadFile('rulebook')">Download Rule Book</button>
+            <button onclick="downloadFile('poster')">Download Poster</button>
+            <button onclick="showContacts()">Contact Coordinators</button>
+            <div id="contactList" class="contact-info"></div>
+            <button id="registerBtn" class="hidden" onclick="showLink()">Click to Register</button>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© Developed and Designed By <a href="https://www.linkedin.com/in/mevikaskulkarni/" class="socials">Vikas Kulkarni</a> - ECE JNNCE</p>
+        <p>© 2025 Mysterio 5.0 | JNNCE Shivamogga | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
