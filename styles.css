@@ -24,14 +24,6 @@ body {
     margin-top: 20px; /* Moves it 2cm down */
 }
 
-/* Adjust for mobile screens */
-@media (max-width: 768px) {
-    .hero {
-        background-size: contain; /* Ensures full image visibility */
-        background-attachment: scroll;
-        height: auto;
-        min-height: 50vh;
-    }
 }
 
 
